@@ -9,12 +9,12 @@ public class TaxiService {
     int maxDiscount = 100;
     int orderOnThousand = 1000;
 
-    void costCalculator() {
+    void costCalculator(int distance) {
 
         System.out.println("Добро пожаловать в службу заказа такси!\n" +
                 "Сколько километров Вам нужно проехать?");
         Scanner in = new Scanner(System.in);
-        int distance = in.nextInt();
+        //distance = in.nextInt();
         double costTravel = distance * priceForKm + seatCost;
         double discountAmount = (costTravel / 100) * bonus;
 
