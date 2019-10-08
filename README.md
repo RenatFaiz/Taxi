@@ -1,5 +1,5 @@
-## Решение домашнего задания
-### ДЗ: Сервис заказа такси
+[![Build Status](https://travis-ci.com/RenatFaiz/Taxi.svg?token=qyayTzPV7xxwtAayegns&branch=master)](https://travis-ci.com/RenatFaiz/Taxi) [![codecov](https://codecov.io/gh/RenatFaiz/Taxi/branch/master/graph/badge.svg?token=X1oXB4WKwn)](https://codecov.io/gh/RenatFaiz/Taxi)
+## ДЗ: Сервис заказа такси
    Написать сервис, рассчитывающий стоимость
    заказа исходя из следующих условий:
    1. Сумма посадки – 60 рублей
