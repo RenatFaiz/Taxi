@@ -13,7 +13,7 @@ public class TaxiService {
 
         System.out.println("Добро пожаловать в службу заказа такси!\n" +
                 "Сколько километров Вам нужно проехать?");
-        Scanner in = new Scanner(System.in);
+        //Scanner in = new Scanner(System.in);
         //distance = in.nextInt();
         double costTravel = distance * priceForKm + seatCost;
         double discountAmount = (costTravel / 100) * bonus;

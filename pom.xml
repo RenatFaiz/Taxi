@@ -10,6 +10,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <build>
         <plugins>
@@ -37,6 +38,9 @@
                             <goal>check</goal>
                         </goals>
                         <configuration>
+                            <includes>
+                                <include>**/*Service.class</include>
+                            </includes>
                             <rules>
                                 <rule>
                                     <element>CLASS</element>
@@ -47,7 +51,7 @@
                                         <limit>
                                             <counter>LINE</counter>
                                             <value>COVEREDRATIO</value>
-                                            <minimum>10%</minimum>
+                                            <minimum>80%</minimum>
                                         </limit>
                                     </limits>
                                 </rule>
@@ -60,13 +64,17 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <includes>
+                                <include>**/*Service.class</include>
+                            </includes>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
     <dependencies>
-        <!-- dep + TAB -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
