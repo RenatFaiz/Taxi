@@ -4,18 +4,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TaxiServiceTest {
     @Test
-    public void shouldCostCalculator() {
+    public void shouldCalculateCost() {
 
         TaxiService taxi = new TaxiService();
 
-        taxi.costCalculator(50);
-        assertEquals(1007, taxi.totalCost);
+        taxi.costCalculator(-10);
+        assertEquals(0, taxi.getTotalCost());
 
-        taxi.costCalculator(200);
-        assertEquals(3960, taxi.totalCost);
+        taxi.costCalculator(0);
+        assertEquals(0, taxi.getTotalCost());
 
         taxi.costCalculator(10);
-        assertEquals(260, taxi.totalCost);
+        assertEquals(260, taxi.getTotalCost());
+
+        taxi.costCalculator(50);
+        assertEquals(1007, taxi.getTotalCost());
+
+        taxi.costCalculator(200);
+        assertEquals(3960, taxi.getTotalCost());
+
 
     }
 }
