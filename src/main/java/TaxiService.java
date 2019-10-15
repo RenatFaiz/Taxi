@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class TaxiService {
 
     private int seatCost = 60;
@@ -29,30 +27,9 @@ public class TaxiService {
             totalCost = costTravel - maxDiscount;
         }
         return totalCost;
-
     }
 
     public double getTotalCost() {
         return (int) totalCost;
     }
-
-    //    public int costCalculator(int distance) {
-//
-//        System.out.println("Добро пожаловать в службу заказа такси!\n" +
-//                "Сколько километров Вам нужно проехать?");
-//
-//        double costTravel = distance * priceForKm + seatCost;
-//        double discountAmount = (costTravel / 100) * bonus;
-//
-//        if (costTravel < orderOnThousand) {
-//            totalCost = costTravel;
-//        } else if (costTravel > orderOnThousand && discountAmount <= maxDiscount) {
-//            totalCost = costTravel - discountAmount;
-//        } else {
-//            totalCost = costTravel - maxDiscount;
-//        }
-//        System.out.println("Стоимость поездки будет равна: " + (int) totalCost + " руб.");
-//        return (int) totalCost;
-//    }
-
 }

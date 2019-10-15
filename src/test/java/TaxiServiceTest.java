@@ -23,6 +23,5 @@ public class TaxiServiceTest {
         taxi.costCalculator(200);
         assertEquals(3960, taxi.getTotalCost());
 
-
     }
 }
